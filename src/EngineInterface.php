@@ -31,7 +31,6 @@ interface EngineInterface
 {
     /**
      * @param DispatchInterface $dispatch
-     * @param ConfigInterface $config
      */
-    public function serve(DispatchInterface $dispatch, ConfigInterface $config): void;
+    public function serve(DispatchInterface $dispatch): void;
 }

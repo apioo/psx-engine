@@ -39,11 +39,21 @@ use PSX\Http\Server\Sender;
 class Engine implements EngineInterface
 {
     /**
+     * @var string
+     */
+    private $baseUrl;
+
+    public function __construct(string $baseUrl)
+    {
+        $this->baseUrl = $baseUrl;
+    }
+
+    /**
      * @inheritdoc
      */
-    public function serve(DispatchInterface $dispatch, ConfigInterface $config): void
+    public function serve(DispatchInterface $dispatch): void
     {
-        $requestFactory  = new RequestFactory($config->get('psx_url'));
+        $requestFactory  = new RequestFactory($this->baseUrl);
         $responseFactory = new ResponseFactory();
 
         $response = $dispatch->route($requestFactory->createRequest(), $responseFactory->createResponse());
