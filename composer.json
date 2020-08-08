@@ -15,17 +15,9 @@
     "php": ">=7.2",
     "psx/http": "^2.0"
   },
-  "require-dev": {
-    "phpunit/phpunit": "^8.0"
-  },
   "autoload": {
     "psr-4": {
       "PSX\\Engine\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "PSX\\Engine\\Tests\\": "tests/"
     }
   }
 }
