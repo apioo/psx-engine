@@ -20,7 +20,6 @@
 
 namespace PSX\Engine\WebServer;
 
-use PSX\Engine\ConfigInterface;
 use PSX\Engine\DispatchInterface;
 use PSX\Engine\EngineInterface;
 use PSX\Http\Server\RequestFactory;

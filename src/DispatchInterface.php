@@ -35,8 +35,7 @@ interface DispatchInterface
     /**
      * @param RequestInterface $request
      * @param ResponseInterface $response
-     * @param ContextInterface|null $context
-     * @return mixed
+     * @return ResponseInterface
      */
-    public function route(RequestInterface $request, ResponseInterface $response, ContextInterface $context = null);
+    public function route(RequestInterface $request, ResponseInterface $response): ResponseInterface;
 }
