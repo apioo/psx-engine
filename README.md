@@ -53,9 +53,9 @@ require_once(__DIR__ . '/../vendor/autoload.php');
 
 $container = require_once(__DIR__ . '/../container.php');
 
-$engine      = new \PSX\Engine\WebServer\Engine(); # adjust the engine class
-$environment = new \PSX\Framework\Environment\Environment($container, $engine);
+$engine      = null; # adjust the engine class
+$environment = \PSX\Framework\Environment\Environment::fromContainer($container, $engine);
 
-return $environment->serve();
+$environment->serve();
 
 ```
