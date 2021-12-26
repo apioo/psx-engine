@@ -29,8 +29,5 @@ namespace PSX\Engine;
  */
 interface EngineInterface
 {
-    /**
-     * @param DispatchInterface $dispatch
-     */
     public function serve(DispatchInterface $dispatch): void;
 }

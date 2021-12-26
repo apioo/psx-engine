@@ -32,10 +32,5 @@ use PSX\Http\ResponseInterface;
  */
 interface DispatchInterface
 {
-    /**
-     * @param RequestInterface $request
-     * @param ResponseInterface $response
-     * @return ResponseInterface
-     */
     public function route(RequestInterface $request, ResponseInterface $response): ResponseInterface;
 }
