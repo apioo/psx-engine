@@ -13,7 +13,10 @@
   ],
   "require": {
     "php": ">=8.0",
-    "psx/http": "^3.0"
+    "psx/http": "^4.0"
+  },
+  "require-dev": {
+    "vimeo/psalm": "^5.0"
   },
   "autoload": {
     "psr-4": {
