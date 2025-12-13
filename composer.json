@@ -16,7 +16,7 @@
     "psx/http": "^4.0"
   },
   "require-dev": {
-    "vimeo/psalm": "^6.0"
+    "phpstan/phpstan": "^2.1"
   },
   "autoload": {
     "psr-4": {
